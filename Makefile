@@ -143,6 +143,9 @@ run_android: all
 build_ios: all
 	@cordova build ios
 
+run_ios: all
+	@cordova run ios
+
 add_android:
 	@echo "-----> Add android platform. Be sure you installed the Android SDK!"
 	@cordova platform add android
