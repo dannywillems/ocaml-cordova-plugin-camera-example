@@ -3,10 +3,6 @@
 This is an example of the binding to the *camera cordova plugin*. See the
 binding [here](https://github.com/dannywillems/ocaml-cordova-plugin-camera)
 
-## How to use ?
-
-TODO
-
 ## How to compile ?
 
 Read the section 'Using js_of_ocaml to develop in OCaml on mobile' first.
