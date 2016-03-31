@@ -1,9 +1,14 @@
 let on_device_ready _ =
-  let succ str = Dom_html.window##(alert str) in
-  let err str = Dom_html.window##(alert str) in
-  let camera = Camera.camera () in
-  camera##(getPicture succ err (Camera.create_options
-  ~save_to_photo_album:(Some true) ~allow_edit:false ()));
+  let succ str =
+    let doc = Dom_html.document in
+    let x = Dom_html.createImg doc in
+    x##.src := (Js.string str);
+    x##.width := 200;
+    Dom.appendChild doc##.body x
+  in
+  let err str = Dom_html.window##(alert (Js.string str)) in
+  let camera = Camera.t () in
+  camera#get_picture succ err (Camera.create_options ());
   Js._false
 
 let _ =
