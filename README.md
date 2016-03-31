@@ -3,6 +3,10 @@
 This is an example of the binding to the *camera cordova plugin*. See the
 binding [here](https://github.com/dannywillems/ocaml-cordova-plugin-camera)
 
+This is the binding to the js_of_ocaml binding.
+[Here](https://github.com/dannywillems/ocaml-cordova-plugin-barcodescanner-example/tree/master)
+the binding with gen_js_api.
+
 ## How to compile ?
 
 Read the section 'Using js_of_ocaml to develop in OCaml on mobile' first.
