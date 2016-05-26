@@ -8,9 +8,6 @@ let on_device_ready _ =
   in
   let err str = Dom_html.window##(alert (Js.string str)) in
   let camera = Cordova_camera.t () in
-  camera#get_picture succ err ();
-  Js._false
+  camera#get_picture succ err ()
 
-let _ =
-  Dom.addEventListener Dom_html.document (Dom.Event.make "deviceready")
-(Dom_html.handler on_device_ready) Js._false
+let _ = Cordova.Event.device_ready on_device_ready
