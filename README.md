@@ -1,5 +1,7 @@
 # ocaml-cordova-plugin-camera-example
 
+[![Build Status](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-camera-example.svg?branch=master)](https://travis-ci.org/dannywillems/ocaml-cordova-plugin-camera-example)
+
 This is an example of the binding to *cordova-plugin-camera*. See the
 binding [here](https://github.com/dannywillems/ocaml-cordova-plugin-camera).
 
