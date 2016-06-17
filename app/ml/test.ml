@@ -7,7 +7,6 @@ let on_device_ready _ =
     Dom.appendChild doc##.body x
   in
   let err str = Dom_html.window##(alert (Js.string str)) in
-  let camera = Cordova_camera.t () in
-  camera#get_picture succ err ()
+  Cordova_camera.get_picture succ err ()
 
 let _ = Cordova.Event.device_ready on_device_ready
